@@ -1,7 +1,7 @@
 #+TITLE: An org mode template for submissions to the /International Journal of Osteoarchaeology/
 #+AUTHOR: Frédéric Santos
 
-This repository provides a minimal org mode template for writing scientific articles, with a convenient formatting for some Wiley journals. This template is more precisely formatted for the [[https://onlinelibrary.wiley.com/journal/10991212][/International Journal of Osteoarchaeology/]], but should be suitable for any journal following [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][Wiley's APA-lato style]].
+This repository provides a minimal [[https://orgmode.org/][org mode]] template for writing scientific articles, with a convenient formatting for some Wiley journals. This template is more precisely formatted for the [[https://onlinelibrary.wiley.com/journal/10991212][/International Journal of Osteoarchaeology/]], but should be suitable for any journal following [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][Wiley's APA-lato style]].
 
 * Elisp config
 The APA-lato style makes use of the LaTeX class ~WileyNJD-v2~, provided by the publisher. So as to use it  with org mode, do not forgive to include those lines in your ~.emacs~ file:
