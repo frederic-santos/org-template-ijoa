@@ -1,0 +1,34 @@
+#+TITLE: An org mode template for submissions to the /International Journal of Osteoarchaeology/
+#+AUTHOR: Frédéric Santos
+
+This repository provides a minimal org mode template for writing scientific articles, with a convenient formatting for some Wiley journals. This template is more precisely formatted for the [[https://onlinelibrary.wiley.com/journal/10991212][/International Journal of Osteoarchaeology/]], but should be suitable for any journal following [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][Wiley's APA-lato style]].
+
+* Elisp config
+The APA-lato style makes use of the LaTeX class ~WileyNJD-v2~, provided by the publisher. So as to use it  with org mode, do not forgive to include those lines in your ~.emacs~ file:
+
+#+begin_src emacs-lisp
+(add-to-list 'org-latex-classes
+	       '("WileyNJD-v2"
+		 "\\documentclass{WileyNJD-v2}"
+		 ("\\section{%s}" . "\\section*{%s}")
+		 ("\\subsection{%s}" . "\\subsection*{%s}")
+		 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
+#+end_src
+
+* org-ref
+This org mode templates supposes that you are using [[https://github.com/jkitchin/org-ref][org-ref]] to handle your bibliography. To install and use org-ref, simply add the following lines to your ~.emacs~ ([[https://mg.readthedocs.io/latexmk.html][latexmk]] must be installed on your computer):
+
+#+begin_src emacs-lisp :results output
+(use-package org-ref
+  :ensure t
+  :after org
+  :init
+  (setq org-latex-pdf-process (list "latexmk -shell-escape -bibtex -f -pdf %f")))
+#+end_src
+
+If you do not wish to use ~org-ref~, simply remove the related parts in the template.
+
+* Installing Lato fonts
+Wiley's APA-lato style makes use of the Lato font.
+- Installing Lato is straightforward for Windows users, since a Windows installer is included in the [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][archive provided by the publisher]].
+- For Linux users, the makefile included in the archive does not seem to work properly (at least on my computer, with Linux Manjaro and TeXLive 2020). An install script (without any warranty: please check and adapt it if necessary!) is available [[https://tex.stackexchange.com/questions/558494/install-wileys-lato-fonts-onlinux?noredirect=1#comment1408514_558494][on Stackoverflow]].
