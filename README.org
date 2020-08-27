@@ -18,7 +18,7 @@ The APA-lato style makes use of the LaTeX class ~WileyNJD-v2~, provided by the p
 #+end_src
 
 * org-ref
-This org mode templates supposes that you are using [[https://github.com/jkitchin/org-ref][org-ref]] to handle your bibliography. To install and use org-ref, simply add the following lines to your ~.emacs~ ([[https://mg.readthedocs.io/latexmk.html][latexmk]] must be installed on your computer):
+This org mode template supposes that you are using [[https://github.com/jkitchin/org-ref][org-ref]] to handle your bibliography. To install and use org-ref, simply add the following lines to your ~.emacs~ ([[https://mg.readthedocs.io/latexmk.html][latexmk]] must be installed on your computer):
 
 #+begin_src emacs-lisp :results output
 (use-package org-ref
@@ -28,7 +28,7 @@ This org mode templates supposes that you are using [[https://github.com/jkitchi
   (setq org-latex-pdf-process (list "latexmk -shell-escape -bibtex -f -pdf %f")))
 #+end_src
 
-If you do not wish to use ~org-ref~, simply remove the related parts in the template.
+If you do not wish to use ~org-ref~, simply remove the related parts in the org template.
 
 * Installing Lato fonts
 Wiley's APA-lato style makes use of the Lato font.
