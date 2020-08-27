@@ -1,7 +1,7 @@
 #+TITLE: An org mode template for submissions to the /International Journal of Osteoarchaeology/
 #+AUTHOR: Frédéric Santos
 
-This repository provides a minimal [[https://orgmode.org/][org mode]] template for writing scientific articles, with a convenient formatting for some Wiley journals. The output after a `C-c C-e l o` on the file ~manuscript.org~ should correspond to the file ~[[https://github.com/frederic-santos/org-template-ijoa/blob/master/manuscrit.pdf][manuscript.pdf]]~.
+This repository provides a minimal [[https://orgmode.org/][org mode]] template for writing scientific articles, with a convenient formatting for some Wiley journals. The output after a =C-c C-e l o= on the file ~manuscript.org~ should correspond to the file [[https://github.com/frederic-santos/org-template-ijoa/blob/master/manuscrit.pdf][manuscript.pdf]].
 
 This template is more precisely formatted for the /[[https://onlinelibrary.wiley.com/journal/10991212][International Journal of Osteoarchaeology]]/, but should be suitable for any journal following [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][Wiley's APA-lato style]].
 
