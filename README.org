@@ -41,3 +41,8 @@ The =:ignore:= tag used for some org headlines is provided by the package [[http
 Wiley's APA-lato style makes use of the Lato font.
 - Installing Lato is straightforward for Windows users, since a Windows installer is included in the [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][archive provided by the publisher]].
 - For Linux users, the makefile included in the archive does not seem to work properly (at least on my computer, with Linux Manjaro and TeXLive 2020). An install script (without any warranty: please check and adapt it if necessary!) is available [[https://tex.stackexchange.com/questions/558494/install-wileys-lato-fonts-onlinux?noredirect=1#comment1408514_558494][on Stackoverflow]].
+* Useful resources
+Writing a reproducible paper with org mode is incredibly convenient and pleasant; however, it may be challenging for beginners. If you are not /really/ familiar with org-mode, the following resources may be useful:
+- [[http://archive.indianstatistics.org/tools/orgpapers.pdf][Using Emacs, Org-mode and R for Research Writing]], a great tutorial by Vikas Rawal
+- [[http://cachestocaches.com/2018/6/org-literate-programming/][Literate programming with Org mode]], a blog post by Greg J. Stein
+- [[https://orgmode.org/worg/org-contrib/babel/uses.html#sec-6][A (non exhasutive!) list of scientific papers prepared with org mode]]
