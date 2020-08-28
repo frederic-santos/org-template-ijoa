@@ -34,7 +34,7 @@ If you do not wish to use ~org-ref~, simply remove the related parts in the org 
 The =:ignore:= tag used for some org headlines is provided by the package [[https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/ox-extra.el][ox-extra]]. If you want to use it, you'll have to download this file in a folder that can be found by Emacs (i.e., a folder which is in its ~load-path~), and to add the following lines in your ~.emacs~:
 #+begin_src emacs-lisp
 (require 'ox-extra)
- (ox-extras-activate '(ignore-headlines))
+(ox-extras-activate '(ignore-headlines))
 #+end_src
 
 * Installing Lato fonts
