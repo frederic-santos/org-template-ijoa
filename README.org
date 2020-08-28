@@ -30,6 +30,13 @@ This org mode template supposes that you are using [[https://github.com/jkitchin
 
 If you do not wish to use ~org-ref~, simply remove the related parts in the org template.
 
+* ~:ignore:~ tag
+The =:ignore:= tag used for some org headlines is provided by the package [[https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/ox-extra.el][ox-extra]]. If you want to use it, you'll have to download this file in a folder that can be found by Emacs (i.e., a folder which is in its ~load-path~), and to add the following lines in your ~.emacs~:
+#+begin_src emacs-lisp
+(require 'ox-extra)
+ (ox-extras-activate '(ignore-headlines))
+#+end_src
+
 * Installing Lato fonts
 Wiley's APA-lato style makes use of the Lato font.
 - Installing Lato is straightforward for Windows users, since a Windows installer is included in the [[https://onlinelibrary.wiley.com/page/journal/10991212/homepage/la_tex_class_files.htm][archive provided by the publisher]].
