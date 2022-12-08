@@ -5,7 +5,10 @@
 #+LATEX_HEADER: \revised{6 June 2016}
 #+LATEX_HEADER: \accepted{6 June 2016}
 #+LATEX_HEADER: \raggedbottom
-#+OPTIONS: author:nil date:nil title:nil toc:nil
+#+OPTIONS: author:nil date:nil title:nil toc:nil ^:nil
+#+BIBLIOGRAPHY: biblio.bib
+#+CITE_EXPORT: natbib apacite
+#+LANGUAGE: en
 
 * Frontmatter                                                        :ignore:
 #+begin_export latex
@@ -51,7 +54,7 @@
 Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
 
 ** Inserting references
-According to cite:adams2019_PhylogeneticComparativeMethods... But this is false according to another recent study citep:aczel2020_DiscussionPointsBayesian.
+According to [cite/t:@adams2006_ResolutionSmallscaleCommingling]... But this is false according to another recent study [cite:@aczel2020_DiscussionPointsBayesian].
 
 * Materials and methods
 Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
@@ -66,7 +69,7 @@ Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis 
 |------------+-------------------+-----------------|
 
 * Results
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
+Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.  See Figure [[fig-scatterplot]].
 
 #+begin_src R :results graphics file :file figure.png :exports results :width 600 :height 400 :session *R*
 data(iris)
@@ -75,6 +78,7 @@ plot(Sepal.Width ~ Sepal.Length, col = Species,
      pch = 16, data = iris)
 #+end_src
 
+#+NAME: fig-scatterplot
 #+CAPTION: A figure.
 #+ATTR_LATEX: :width 0.6 \textwidth
 #+RESULTS:
